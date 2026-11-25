@@ -1,0 +1,794 @@
+<!doctype html>
+<html lang="es-GT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>I.STAFF | Recursos Humanos para empresas en Guatemala</title>
+<meta name="description" content="I.STAFF: reclutamiento y selección de personal, outsourcing, pruebas de evaluación, estudios socioeconómicos y manuales internos para empresas en Guatemala.">
+<meta name="theme-color" content="#080c16">
+<link rel="canonical" href="https://www.istaff.com.gt/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_GT">
+<meta property="og:site_name" content="I.STAFF">
+<meta property="og:title" content="I.STAFF | Talento que transforma empresas">
+<meta property="og:description" content="Reclutamiento, evaluación y gestión de personal para empresas en Guatemala.">
+<meta property="og:url" content="https://www.istaff.com.gt/">
+<meta property="og:image" content="https://www.istaff.com.gt/assets/og-istaff.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Geist:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" imagesrcset="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=900&q=65&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1920&q=70&auto=format&fit=crop 1920w" imagesizes="100vw" fetchpriority="high">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EmploymentAgency",
+  "name": "I.STAFF",
+  "legalName": "I-STAFF, S.A.",
+  "url": "https://www.istaff.com.gt/",
+  "email": "info@istaff.com.gt",
+  "telephone": "+502 2313-3600",
+  "address": {"@type": "PostalAddress", "streetAddress": "15 avenida 16-14, zona 13, Edificio Narama, 4to nivel, Oficina 415", "addressLocality": "Ciudad de Guatemala", "addressCountry": "GT"},
+  "areaServed": "GT",
+  "sameAs": ["https://gt.linkedin.com/company/i-staff-s-a-", "https://www.tiktok.com/@istaffguatemala", "https://www.yolaboro.net/"]
+}
+</script>
+<style>
+/* ============ Tokens: "The dark room" ============ */
+:root{
+  --ground:#080c16;      /* blue-black room */
+  --surface:#0f1626;     /* one tone step up */
+  --surface-2:#151e33;
+  --ink:#e9edf4;         /* light ink, ~16:1 */
+  --ink-2:#a3aec0;       /* secondary, ~8:1 */
+  --paper:#eef1f6;       /* the lit file */
+  --paper-ink:#0b1222;
+  --paper-ink-2:#3b475e;
+  --cta:#2560f0;         /* the one bright thing: the action (white text 5.1:1) */
+  --cta-hover:#1d4fd1;
+  --serif:"Instrument Serif","Times New Roman",serif;
+  --sans:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --s-display:clamp(34px,9.2vw,140px);
+  --s-h2:clamp(34px,5vw,72px);
+  --s-h3:clamp(28px,2.9vw,42px);
+  --s-body:clamp(17px,1.2vw,19px);
+  --s-small:15px;
+  --margin:clamp(20px,4vw,56px);
+  --gap-section:clamp(120px,14vw,220px);
+  --ease:cubic-bezier(.22,1,.36,1);
+  --dur:.9s;
+  --sat:env(safe-area-inset-top,0px); --sab:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--sans);font-size:var(--s-body);line-height:1.55;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:clip}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--ink);outline-offset:4px}
+::selection{background:var(--cta);color:#fff}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:fixed;left:16px;top:-80px;z-index:200;background:var(--ink);color:var(--ground);padding:12px 18px;text-decoration:none}
+.skip:focus{top:calc(12px + var(--sat))}
+.frame{width:100%;max-width:1520px;margin:0 auto;padding:0 var(--margin)}
+h1,h2,h3{font-family:var(--serif);font-weight:400;margin:0;letter-spacing:-.02em;line-height:1;text-wrap:balance}
+h2{font-size:var(--s-h2)}
+h3{font-size:var(--s-h3);line-height:1.05}
+p{margin:0}
+.lede{font-size:clamp(19px,1.6vw,24px);line-height:1.45;max-width:34ch}
+.muted{color:var(--ink-2)}
+section{position:relative}
+.sec{padding-top:var(--gap-section)}
+figure{margin:0}
+
+/* ============ Buttons (pill, decided once) ============ */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 28px;border-radius:999px;border:0;background:var(--cta);color:#fff;font-weight:500;font-size:16px;text-decoration:none;cursor:pointer;transition:background .3s,transform .4s var(--ease)}
+.btn:hover{background:var(--cta-hover)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:14px;height:14px;transition:transform .4s var(--ease)}
+.btn:hover svg{transform:translateX(4px)}
+.tlink{display:inline-flex;align-items:center;gap:10px;font-weight:500;text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1px;transition:text-underline-offset .3s;background:none;border:0;padding:0;cursor:pointer;font-size:inherit;color:inherit;justify-self:start;min-height:44px}
+.tlink:hover{text-underline-offset:9px}
+.tlink svg{width:13px;height:13px;transition:transform .4s var(--ease)}
+.tlink:hover svg{transform:translateX(4px)}
+
+/* ============ Nav: wordmark, five links, one action ============ */
+/* REEMPLAZAR: el wordmark es provisional; usar el logotipo oficial de I.STAFF cuando llegue. */
+.nav{position:fixed;inset:0 0 auto 0;z-index:100;padding-top:var(--sat);transition:transform .6s var(--ease),background .4s}
+.nav.is-solid{background:var(--ground)}
+.nav.is-hidden{transform:translateY(-100%)}
+.nav__in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:80px}
+.mark{display:inline-flex;align-items:center;min-height:48px;font-family:var(--serif);font-size:30px;line-height:1;text-decoration:none;letter-spacing:.01em}
+.nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+.nav ul a{font-size:15px;text-decoration:none;color:var(--ink-2);transition:color .3s}
+.nav ul a:hover,.nav ul a.is-active{color:var(--ink)}
+.nav .btn{min-height:44px;padding:0 22px;font-size:15px}
+.burger{display:none;min-width:48px;min-height:48px;border:0;border-radius:999px;background:var(--surface-2);color:var(--ink);cursor:pointer;font-size:15px;padding:0 20px}
+.mmenu{position:fixed;inset:0;z-index:90;background:var(--ground);padding:calc(110px + var(--sat)) var(--margin) calc(32px + var(--sab));display:flex;flex-direction:column;justify-content:space-between;opacity:0;visibility:hidden;transition:opacity .5s var(--ease),visibility .5s}
+.menu-open .mmenu{opacity:1;visibility:visible}
+.mmenu ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.mmenu li a{display:block;font-family:var(--serif);font-size:44px;line-height:1.15;text-decoration:none;transform:translateY(16px);opacity:0;transition:transform .6s var(--ease),opacity .6s}
+.menu-open .mmenu li a{transform:none;opacity:1}
+.mmenu li:nth-child(2) a{transition-delay:.05s}.mmenu li:nth-child(3) a{transition-delay:.1s}.mmenu li:nth-child(4) a{transition-delay:.15s}.mmenu li:nth-child(5) a{transition-delay:.2s}.mmenu li:nth-child(6) a{transition-delay:.25s}
+.mmenu p{color:var(--ink-2);font-size:var(--s-small);display:grid;gap:6px}
+.mmenu p a{text-decoration:none}
+@media (max-width:1020px){.nav ul,.nav .btn{display:none}.burger{display:block}}
+
+/* ============ Hero ============ */
+.hero{padding-top:calc(96px + var(--sat))}
+.hero__stage{position:relative;height:clamp(240px,calc(100svh - 450px),640px);min-height:clamp(240px,40svh,420px);overflow:hidden;background:var(--surface)}
+.hero__stage figure{position:absolute;inset:0;opacity:0;transition:opacity 2.2s ease}
+.hero__stage figure.is-on{opacity:1}
+.hero__stage img{width:100%;height:100%;object-fit:cover;filter:brightness(.72) contrast(1.06) saturate(.7)}
+.hero__stage figure.is-on img{animation:drift 12s linear forwards}
+@keyframes drift{from{transform:scale(1.1)}to{transform:scale(1.01)}}
+.hero__stage figcaption{position:absolute;right:0;bottom:0;font-size:14px;color:var(--ink);background:var(--ground);padding:8px 14px}
+.hero__text{display:grid;gap:clamp(20px,2.4vw,32px);padding-top:clamp(24px,3vw,40px)}
+.hero h1{font-size:clamp(38px,8.4vw,128px);line-height:.92;letter-spacing:-.03em}
+.hero__side{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px 64px;align-items:end}
+.hero__side p{max-width:46ch}
+.hero__acts{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px}
+@media (max-width:820px){.hero__side{grid-template-columns:1fr}}
+
+/* ============ Nosotros ============ */
+.about__grid{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:clamp(32px,6vw,96px);align-items:start}
+.about__img{aspect-ratio:4/5;overflow:hidden;background:var(--surface)}
+.about__img img{width:100%;height:100%;object-fit:cover}
+.about__text{display:grid;gap:24px;padding-top:clamp(0px,4vw,60px)}
+.about__text h2{margin-bottom:8px}
+.about__text p{max-width:56ch}
+.mv{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:24px}
+.mv h3{margin-bottom:14px}
+.mv p{color:var(--ink-2)}
+@media (max-width:820px){.about__grid,.mv{grid-template-columns:1fr}.about__img{aspect-ratio:4/3}}
+
+/* ============ Servicios: exhibits at uneven sizes ============ */
+.svc__head{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:32px 96px;align-items:end;margin-bottom:clamp(64px,8vw,120px)}
+.ex{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:center;margin-bottom:clamp(88px,10vw,160px)}
+.ex__img{overflow:hidden;background:var(--surface)}
+.ex__img img{width:100%;height:100%;object-fit:cover}
+.ex__text{display:grid;gap:18px}
+.ex__text p{max-width:48ch}
+.ex__text .incl{color:var(--ink-2);font-size:var(--s-small);max-width:52ch}
+.ex--a .ex__img{grid-column:1/8;aspect-ratio:4/3}.ex--a .ex__text{grid-column:9/13}
+.ex--b .ex__img{grid-column:7/13;aspect-ratio:1/1;grid-row:1}.ex--b .ex__text{grid-column:1/6;grid-row:1}
+.ex--c .ex__img{grid-column:2/7;aspect-ratio:3/4}.ex--c .ex__text{grid-column:8/12}
+.ex--d .ex__img{grid-column:6/13;aspect-ratio:16/10;grid-row:1}.ex--d .ex__text{grid-column:1/5;grid-row:1}
+.ex--e .ex__img{grid-column:1/6;aspect-ratio:4/5}.ex--e .ex__text{grid-column:7/12}
+.more{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:32px 96px;padding:clamp(32px,5vw,72px);background:var(--surface)}
+.more ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:4px 32px}
+.more li button{display:block;width:100%;min-height:48px;text-align:left;padding:10px 0;background:none;border:0;cursor:pointer;font-size:var(--s-body);color:var(--ink);transition:transform .4s var(--ease);text-decoration:underline;text-decoration-color:transparent;text-underline-offset:6px}
+.more li button:hover{transform:translateX(6px);text-decoration-color:currentColor}
+.more p{color:var(--ink-2);margin-top:16px;max-width:40ch}
+@media (max-width:900px){
+  .svc__head,.more,.more ul{grid-template-columns:1fr}
+  .ex{grid-template-columns:1fr;gap:24px}
+  .ex .ex__img,.ex .ex__text{grid-column:1/-1!important;grid-row:auto!important}
+  .ex .ex__img{aspect-ratio:4/3!important}
+}
+
+/* ============ Soluciones: the live file ============ */
+.file{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(32px,5vw,96px);align-items:stretch}
+.file__intro{display:grid;gap:22px;align-content:start}
+.file__intro p{max-width:44ch}
+.picks{display:grid;gap:26px;margin-top:16px}
+.picks fieldset{border:0;margin:0;padding:0;min-width:0}
+.picks legend{font-size:var(--s-small);color:var(--ink-2);margin-bottom:10px;padding:0}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.pick{position:relative}
+.pick input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.pick span{display:inline-flex;align-items:center;gap:10px;min-height:46px;padding:0 18px;border-radius:999px;background:var(--surface-2);font-size:16px;transition:background .3s,color .3s,transform .3s var(--ease)}
+.pick span::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--ink-2);transition:background .3s,transform .3s var(--ease)}
+.pick:hover span{background:#1d2842}
+.pick input:checked + span{background:var(--paper);color:var(--paper-ink)}
+.pick input:checked + span::before{background:var(--cta);transform:scale(1.3)}
+.pick input:focus-visible + span{outline:2px solid var(--ink);outline-offset:3px}
+.pick:active span{transform:scale(.96)}
+.sheet{background:var(--paper);color:var(--paper-ink);padding:clamp(28px,4vw,56px);clip-path:polygon(0 0,calc(100% - 48px) 0,100% 48px,100% 100%,0 100%);display:flex;flex-direction:column}
+.sheet__top{display:flex;justify-content:space-between;align-items:baseline;gap:12px 20px;flex-wrap:wrap;padding-right:32px}
+.sheet__count{font-size:var(--s-small);color:var(--paper-ink-2)}
+.sheet ol{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:4px}
+.sheet li{padding:12px 16px;display:grid;gap:2px;background:#e2e7ef}
+.sheet li strong{font-weight:500;font-size:17px}
+.sheet li span{font-size:var(--s-small);color:var(--paper-ink-2)}
+.sheet li[hidden]{display:none}
+.sheet li.is-new{animation:inrow .6s var(--ease)}
+@keyframes inrow{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.sheet__foot{margin-top:auto;padding-top:28px;display:grid;gap:16px;justify-items:start}
+.sheet__foot p{font-size:var(--s-small);color:var(--paper-ink-2);max-width:52ch}
+@media (max-width:900px){.file{grid-template-columns:1fr}}
+
+/* ============ Proceso: the light moves through the list ============ */
+.proc{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,6vw,96px)}
+.proc__head{position:sticky;top:120px;align-self:start;display:grid;gap:22px}
+.proc__head p{max-width:40ch}
+.proc__img{aspect-ratio:3/2;overflow:hidden;background:var(--surface);margin-top:12px}
+.proc__img img{width:100%;height:100%;object-fit:cover}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:clamp(40px,5vw,72px)}
+.steps li{display:grid;gap:10px}
+.steps h3{transition:color .7s var(--ease)}
+.steps p{max-width:46ch;color:var(--ink-2);transition:color .7s var(--ease)}
+.js .steps li h3,.js .steps li p{color:#4a5468}
+.js .steps li.is-lit h3{color:var(--ink)}
+.js .steps li.is-lit p{color:var(--ink-2)}
+@media (max-width:900px){.proc{grid-template-columns:1fr}.proc__head{position:static}}
+
+/* ============ YoLaboro: two doors ============ */
+.doors__head{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:24px 96px;align-items:end;margin-bottom:clamp(48px,6vw,88px)}
+.doors{display:grid;grid-template-columns:7fr 5fr;gap:24px}
+.door{display:flex;flex-direction:column;background:var(--surface);text-decoration:none;transition:background .4s}
+.door:hover{background:var(--surface-2)}
+.door__img{overflow:hidden;aspect-ratio:16/10}
+.door--cand .door__img{aspect-ratio:auto;flex:1;min-height:260px}
+.door__img img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.door:hover .door__img img{transform:scale(1.04)}
+.door__body{padding:clamp(28px,3vw,44px);display:grid;gap:16px;align-content:start}
+.door__body p{max-width:42ch}
+.door__who{font-size:var(--s-small);color:var(--ink-2)}
+@media (max-width:900px){.doors__head,.doors{grid-template-columns:1fr}.door--cand .door__img{aspect-ratio:16/10;flex:none;min-height:0}}
+
+/* ============ Confianza: prints on the wall ============ */
+.trust{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:32px;align-items:start}
+.trust__text{grid-column:1/6;display:grid;gap:24px;position:sticky;top:120px}
+.trust__text p{max-width:46ch}
+.pillars{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:22px}
+.pillars strong{display:block;font-weight:500}
+.pillars span{color:var(--ink-2);font-size:var(--s-small)}
+.wall{grid-column:7/13;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:24px}
+.wall figure{overflow:hidden;background:var(--surface)}
+.wall img{width:100%;height:100%;object-fit:cover}
+.w1{grid-column:1/5;aspect-ratio:4/3}
+.w2{grid-column:3/7;aspect-ratio:1/1}
+.w3{grid-column:1/4;aspect-ratio:3/4}
+.figs{grid-column:4/7;align-self:end;display:grid;gap:22px;padding-bottom:8px}
+.figs strong{display:block;font-family:var(--serif);font-weight:400;font-size:var(--s-h2);line-height:1}
+.figs span{color:var(--ink-2);font-size:var(--s-small)}
+.figs small{font-size:14px;color:var(--ink-2)}
+@media (max-width:900px){.trust,.wall{grid-template-columns:1fr}.trust__text,.wall,.w1,.w2,.w3,.figs{grid-column:1/-1}.trust__text{position:static}.w2{aspect-ratio:4/3}}
+
+/* ============ Contacto ============ */
+.contact{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(40px,6vw,96px);align-items:start}
+.contact__text{display:grid;gap:24px}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:26px 32px;margin:12px 0 0}
+.facts dt{font-size:var(--s-small);color:var(--ink-2);margin-bottom:4px}
+.facts dd{margin:0}
+.facts a{text-decoration:none}
+.facts a:hover{text-decoration:underline;text-underline-offset:5px}
+.facts .wide{grid-column:1/-1}
+.social{display:flex;flex-wrap:wrap;gap:10px 22px}
+.social a{font-size:var(--s-small);color:var(--ink-2);text-decoration:underline;text-underline-offset:5px;padding:6px 0}
+.social a:hover{color:var(--ink)}
+.contact__img{aspect-ratio:16/9;overflow:hidden;background:var(--surface);margin-top:8px}
+.contact__img img{width:100%;height:100%;object-fit:cover}
+.form{background:var(--surface);padding:clamp(24px,4vw,56px)}
+.form h3{margin-bottom:28px}
+.fgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 24px}
+.f{display:grid;gap:8px;align-content:start}
+.f--wide{grid-column:1/-1}
+.f label{font-size:var(--s-small);color:var(--ink-2)}
+.f input,.f select,.f textarea{width:100%;background:var(--ground);border:1px solid #2a3550;border-radius:0;padding:14px 16px;font-size:17px;color:var(--ink);transition:border-color .3s;-webkit-appearance:none;appearance:none}
+.f select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='%23e9edf4' stroke-width='1.5'%3E%3Cpath d='M1 1l5 5 5-5'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 16px center;padding-right:40px;cursor:pointer}
+.f select option{background:var(--ground)}
+.f textarea{min-height:130px;resize:vertical}
+.f input:hover,.f select:hover,.f textarea:hover{border-color:#3d4a6a}
+.f input:focus,.f select:focus,.f textarea:focus{outline:none;border-color:var(--ink)}
+.f.has-error input,.f.has-error select,.f.has-error textarea{border-color:#ff8a8a}
+.f__err{font-size:14px;color:#ff9c9c}
+.f__err:empty{display:none}
+.form__foot{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px;margin-top:28px}
+.form__foot p{font-size:14px;color:var(--ink-2);max-width:38ch}
+.status{margin-top:20px;padding:16px 18px;font-size:16px;display:none}
+.status.is-ok{display:block;background:var(--paper);color:var(--paper-ink)}
+.status.is-err{display:block;background:#3a1620;color:#ffd9d9}
+.status a{color:inherit}
+.hp{position:absolute;left:-9999px}
+.btn[disabled]{opacity:.6;pointer-events:none}
+@media (max-width:900px){.contact{grid-template-columns:1fr}}
+@media (max-width:560px){.fgrid,.facts{grid-template-columns:1fr}}
+
+/* ============ Footer: the name returns ============ */
+.footer{padding:var(--gap-section) 0 calc(28px + var(--sab));overflow:hidden}
+.footer__name{font-family:var(--serif);font-size:clamp(80px,32vw,540px);line-height:.8;letter-spacing:-.04em;color:var(--surface-2);margin:0 0 48px;white-space:nowrap}
+.footer__cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px}
+.footer__cols h2{font-family:var(--sans);font-size:var(--s-small);font-weight:500;letter-spacing:0;margin-bottom:14px;color:var(--ink-2)}
+.footer__cols ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.footer__cols a{text-decoration:none;font-size:var(--s-small)}
+.footer__cols a:hover{text-decoration:underline;text-underline-offset:5px}
+.footer__cols p{font-size:var(--s-small);color:var(--ink-2);max-width:34ch}
+.footer__bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:64px;font-size:14px;color:var(--ink-2)}
+.footer__bot a{color:inherit}
+@media (max-width:900px){.footer__cols{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.footer__cols{grid-template-columns:1fr}}
+
+/* ============ Motion (states exist only when JS runs) ============ */
+/* Signature: the light comes on. Each exhibit enters dark and is lit as it reaches the visitor. */
+.js .lit img{filter:brightness(.16) saturate(.4);transform:scale(1.06);transition:filter 1.6s var(--ease),transform 2.2s var(--ease)}
+.js .lit.is-lit img{filter:brightness(.84) contrast(1.05) saturate(.75);transform:scale(1)}
+.js .door .lit.is-lit img{transition:filter 1.6s var(--ease),transform 1.4s var(--ease)}
+.js [data-rise]>*{opacity:0;transform:translateY(24px);transition:opacity var(--dur) var(--ease),transform var(--dur) var(--ease)}
+.js [data-rise].is-in>*{opacity:1;transform:none}
+.js [data-rise].is-in>*:nth-child(2){transition-delay:.08s}
+.js [data-rise].is-in>*:nth-child(3){transition-delay:.16s}
+.js [data-rise].is-in>*:nth-child(4){transition-delay:.24s}
+.js [data-rise].is-in>*:nth-child(5){transition-delay:.32s}
+.js [data-rise].is-in>*:nth-child(6){transition-delay:.4s}
+.js .hero h1,.js .hero__side{opacity:0;transform:translateY(28px)}
+.js .is-ready .hero h1,.js .is-ready .hero__side{opacity:1;transform:none;transition:opacity 1.2s var(--ease),transform 1.2s var(--ease)}
+.js .is-ready .hero__side{transition-delay:.15s}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition-duration:.001ms!important;scroll-behavior:auto!important}
+  .js [data-rise]>*,.js .hero h1,.js .hero__side{opacity:1!important;transform:none!important}
+  .js .lit img{filter:brightness(.84) contrast(1.05) saturate(.75);transform:none}
+  .js .steps li h3{color:var(--ink)}.js .steps li p{color:var(--ink-2)}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js');</script>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="nav">
+  <div class="frame nav__in">
+    <a href="#inicio" class="mark" aria-label="I.STAFF, inicio">I.STAFF</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#soluciones">Soluciones empresariales</a></li>
+        <li><a href="#proceso">Nuestro proceso</a></li>
+        <li><a href="#yolaboro">YoLaboro</a></li>
+      </ul>
+    </nav>
+    <a href="#contacto" class="btn">Solicitar asesoría</a>
+    <button class="burger" id="burger" aria-expanded="false" aria-controls="mmenu">Menú</button>
+  </div>
+</header>
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <ul>
+    <li><a href="#nosotros">Nosotros</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#soluciones">Soluciones</a></li>
+    <li><a href="#proceso">Nuestro proceso</a></li>
+    <li><a href="#yolaboro">YoLaboro</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <p><a href="mailto:info@istaff.com.gt">info@istaff.com.gt</a><a href="tel:+50223133600">+502 2313-3600</a></p>
+</div>
+
+<main id="main">
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio" aria-labelledby="hero-title">
+  <div class="frame">
+    <div class="hero__stage" id="stage">
+      <!-- VIDEO OPCIONAL: reemplazar las figuras por <video autoplay muted loop playsinline poster="..."><source src="assets/hero.mp4" type="video/mp4"></video> -->
+      <figure class="is-on"><img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1920&q=70&auto=format&fit=crop" srcset="https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=900&q=65&auto=format&fit=crop 900w, https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1920&q=70&auto=format&fit=crop 1920w" sizes="100vw" alt="Ejecutivo en un edificio corporativo" fetchpriority="high"><figcaption>Liderazgo</figcaption></figure>
+      <figure><img data-src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1920&q=70&auto=format&fit=crop" alt="Reunión de trabajo en una sala de juntas"><figcaption>Decisiones de equipo</figcaption></figure>
+      <figure><img data-src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1920&q=70&auto=format&fit=crop" alt="Entrevista de selección de personal"><figcaption>Entrevista de selección</figcaption></figure>
+    </div>
+    <div class="hero__text">
+      <h1 id="hero-title">Talento que transforma empresas.</h1>
+      <div class="hero__side">
+        <p class="lede">I.STAFF es la empresa guatemalteca de Recursos Humanos que conecta a su organización con las personas que la hacen crecer.</p>
+        <div class="hero__acts">
+          <a href="#contacto" class="btn">Solicitar asesoría <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg></a>
+          <a href="https://www.yolaboro.net/" target="_blank" rel="noopener" class="tlink">Busco empleo<span class="sr-only"> (abre YoLaboro en una pestaña nueva)</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOSOTROS ============ -->
+<section class="sec" id="nosotros" aria-labelledby="about-title">
+  <div class="frame about__grid">
+    <figure class="about__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=1100&q=70&auto=format&fit=crop" alt="Profesional de Recursos Humanos en su oficina"></figure>
+    <div class="about__text" data-rise>
+      <h2 id="about-title">Personas, con método.</h2>
+      <p class="lede">Nacimos de un grupo de inversionistas con amplia trayectoria en recursos humanos, tecnología y servicios.</p>
+      <p>En 2007 creamos YoLaboro.net, nuestro portal de empleos. En 2016 lo convertimos en una plataforma que integra registro, entrevistas en línea y video en un expediente digital que cada cliente consulta en línea. Hoy unimos el criterio de nuestro equipo con esa tecnología propia para acompañar a las empresas en cada decisión sobre su talento.</p>
+      <div class="mv">
+        <div><h3>Misión</h3><p>Ser la compañía líder en vinculación de talento calificado mediante tecnología e innovación, reduciendo tiempos y costos y consolidándonos como referente en Latinoamérica.</p></div>
+        <div><h3>Visión</h3><p>Ser el aliado tecnológico de las organizaciones en la gestión, selección y desarrollo de talento, mediante la digitalización integral de sus procesos de reclutamiento.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICIOS ============ -->
+<section class="sec" id="servicios" aria-labelledby="svc-title">
+  <div class="frame">
+    <div class="svc__head" data-rise>
+      <h2 id="svc-title">Nuestros servicios</h2>
+      <p class="lede">Desde encontrar al candidato hasta ordenar cómo trabaja su empresa: un solo aliado para todo el ciclo de su talento.</p>
+    </div>
+
+    <article class="ex ex--a">
+      <figure class="ex__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&q=70&auto=format&fit=crop" alt="Entrevista entre una reclutadora y una candidata"></figure>
+      <div class="ex__text" data-rise>
+        <h3>Reclutamiento y selección</h3>
+        <p>Buscamos, evaluamos y le presentamos candidatos alineados con el puesto y con la cultura de su empresa, apoyados en nuestra plataforma YoLaboro.</p>
+        <p class="incl">Incluye video entrevista, pruebas psicométricas integradas, matching candidato-vacante con inteligencia artificial y un panel donde usted consulta el expediente y el avance de cada candidato.</p>
+        <button class="tlink" data-service="Reclutamiento y selección de personal">Solicitar información <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg></button>
+      </div>
+    </article>
+
+    <article class="ex ex--b">
+      <figure class="ex__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=1100&q=70&auto=format&fit=crop" alt="Equipo trabajando en una oficina abierta"></figure>
+      <div class="ex__text" data-rise>
+        <h3>Outsourcing de personal</h3>
+        <p>Gestionamos personal por medio de terceros para que su organización agilice sus procesos de negocio, optimice su operación y se concentre en lo estratégico.</p>
+        <p class="incl">Pensado para agilizar procesos, optimizarlos con personal externo y reducir costos.</p>
+        <button class="tlink" data-service="Outsourcing">Solicitar información <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg></button>
+      </div>
+    </article>
+
+    <article class="ex ex--c">
+      <figure class="ex__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1562564055-71e051d33c19?w=900&q=70&auto=format&fit=crop" alt="Persona respondiendo una prueba escrita"></figure>
+      <div class="ex__text" data-rise>
+        <h3>Pruebas de evaluación</h3>
+        <p>Información objetiva para decidir con confianza sobre cada candidato, antes de contratarlo.</p>
+        <p class="incl">Pruebas técnicas, psicométricas y de integridad, polígrafo y VSA.</p>
+        <button class="tlink" data-service="Pruebas de evaluación">Solicitar información <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg></button>
+      </div>
+    </article>
+
+    <article class="ex ex--d">
+      <figure class="ex__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1565688534245-05d6b5be184a?w=1300&q=70&auto=format&fit=crop" alt="Revisión de documentos sobre una mesa"></figure>
+      <div class="ex__text" data-rise>
+        <h3>Estudios socioeconómicos</h3>
+        <p>Verificamos el entorno del candidato con una visita domiciliar y un informe ordenado.</p>
+        <p class="incl">Información personal, laboral, familiar y socioeconómica, condiciones de salud y de trabajo, fotografías (garaje o un interior de la vivienda), huellas dactilares y una referencia laboral.</p>
+        <button class="tlink" data-service="Estudios socioeconómicos">Solicitar información <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg></button>
+      </div>
+    </article>
+
+    <article class="ex ex--e">
+      <figure class="ex__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=900&q=70&auto=format&fit=crop" alt="Redacción de documentos internos de una empresa"></figure>
+      <div class="ex__text" data-rise>
+        <h3>Manuales y políticas internas</h3>
+        <p>Dejamos por escrito cómo trabaja su organización, para que las reglas sean claras y cada persona nueva se integre con orden.</p>
+        <p class="incl">Políticas internas, Reglamento Interior de Trabajo, manual de inducción, manual de reclutamiento y selección, y manual de procesos internos.</p>
+        <button class="tlink" data-service="Elaboración de manuales y políticas">Solicitar información <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg></button>
+      </div>
+    </article>
+
+    <!-- VALIDAR con I.STAFF que estos servicios siguen vigentes antes de publicar. -->
+    <div class="more" data-rise>
+      <div><h3>Asesoría corporativa</h3><p>Acompañamiento para la gestión humana de su empresa. Elija un tema y lo llevamos al formulario.</p></div>
+      <ul>
+        <li><button data-service="Head Hunting">Head Hunting</button></li>
+        <li><button data-service="Asesoría corporativa">Asesoría corporativa</button></li>
+        <li><button data-service="Perfiles de puestos">Perfiles de puestos</button></li>
+        <li><button data-service="Clima organizacional">Clima organizacional</button></li>
+        <li><button data-service="Resolución de conflictos">Resolución de conflictos</button></li>
+        <li><button data-service="Otro">Otra necesidad</button></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOLUCIONES: arme el expediente ============ -->
+<section class="sec" id="soluciones" aria-labelledby="sol-title">
+  <div class="frame file">
+    <div class="file__intro" data-rise>
+      <h2 id="sol-title">Arme su próxima contratación</h2>
+      <p class="lede">El talento adecuado comienza con una buena estrategia.</p>
+      <p class="muted">Elija lo que necesita saber de cada candidato. A la derecha verá el expediente que usted consultará en su panel de YoLaboro.</p>
+      <form class="picks" id="picks" aria-label="Piezas del expediente" onsubmit="return false">
+        <fieldset><legend>Búsqueda</legend><div class="chips">
+          <label class="pick"><input type="checkbox" value="video" checked><span>Video entrevista</span></label>
+          <label class="pick"><input type="checkbox" value="match" checked><span>Matching con la vacante</span></label>
+        </div></fieldset>
+        <fieldset><legend>Evaluación</legend><div class="chips">
+          <label class="pick"><input type="checkbox" value="psico" checked><span>Psicométricas</span></label>
+          <label class="pick"><input type="checkbox" value="tecnicas"><span>Técnicas</span></label>
+          <label class="pick"><input type="checkbox" value="integridad"><span>Integridad</span></label>
+          <label class="pick"><input type="checkbox" value="poligrafo"><span>Polígrafo</span></label>
+          <label class="pick"><input type="checkbox" value="vsa"><span>VSA</span></label>
+        </div></fieldset>
+        <fieldset><legend>Verificación</legend><div class="chips">
+          <label class="pick"><input type="checkbox" value="socio"><span>Estudio socioeconómico</span></label>
+        </div></fieldset>
+      </form>
+    </div>
+    <div class="sheet" aria-live="polite">
+      <div class="sheet__top"><h3>Expediente del candidato</h3><span class="sheet__count" id="count">10 piezas posibles</span></div>
+      <ol id="sheetList">
+        <li data-k="base"><strong>Perfil y registro</strong><span>Datos, escolaridad, experiencia y documentos disponibles.</span></li>
+        <li data-k="video"><strong>Video entrevista</strong><span>Un minuto con su nombre, escolaridad y experiencia laboral.</span></li>
+        <li data-k="match"><strong>Afinidad con la vacante</strong><span>Porcentaje de afinidad calculado con inteligencia artificial.</span></li>
+        <li data-k="psico"><strong>Pruebas psicométricas</strong><span>Evaluaciones de selección y diagnóstico dentro del perfil.</span></li>
+        <li data-k="tecnicas"><strong>Pruebas técnicas</strong><span>Conocimientos y habilidades propias del puesto.</span></li>
+        <li data-k="integridad"><strong>Prueba de integridad</strong><span>Información sobre la confiabilidad del candidato.</span></li>
+        <li data-k="poligrafo"><strong>Polígrafo</strong><span>Verificación de confiabilidad.</span></li>
+        <li data-k="vsa"><strong>VSA</strong><span>Verificación de confiabilidad por análisis de voz.</span></li>
+        <li data-k="socio"><strong>Estudio socioeconómico</strong><span>Visita domiciliar con información personal, laboral, familiar y de salud, fotografías, huellas y referencia laboral.</span></li>
+        <li data-k="track"><strong>Seguimiento</strong><span>Notas de entrevista y avance del proceso, siempre a la vista.</span></li>
+      </ol>
+      <div class="sheet__foot">
+        <p>Le enviaremos una propuesta para esta combinación. Los alcances finales se definen con usted.</p>
+        <a href="#contacto" class="btn" id="sheetCta">Solicitar esta búsqueda <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESO ============ -->
+<!-- PROPUESTA: validar con I.STAFF que estas etapas corresponden a su metodología real. -->
+<section class="sec" id="proceso" aria-labelledby="proc-title">
+  <div class="frame proc">
+    <div class="proc__head" data-rise>
+      <h2 id="proc-title">Nuestro proceso</h2>
+      <p class="lede">Seis etapas que dan orden y transparencia a cada búsqueda. Usted ve el avance en su panel.</p>
+      <figure class="proc__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=900&q=65&auto=format&fit=crop" alt="Equipo revisando candidatos en una sala de juntas"></figure>
+    </div>
+    <ol class="steps" id="steps">
+      <li><h3>Entendemos su necesidad</h3><p>Conocemos su empresa, su cultura y el objetivo de la posición.</p></li>
+      <li><h3>Definimos el perfil</h3><p>Precisamos competencias, experiencia y condiciones del puesto.</p></li>
+      <li><h3>Buscamos el talento</h3><p>Activamos YoLaboro y nuestras fuentes de reclutamiento.</p></li>
+      <li><h3>Evaluamos y seleccionamos</h3><p>Entrevistas, pruebas y verificaciones según el perfil.</p></li>
+      <li><h3>Presentamos candidatos</h3><p>Le compartimos expedientes completos para que usted decida.</p></li>
+      <li><h3>Damos seguimiento</h3><p>Acompañamos la incorporación y el cierre del proceso.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ YOLABORO ============ -->
+<section class="sec" id="yolaboro" aria-labelledby="yl-title">
+  <div class="frame">
+    <div class="doors__head" data-rise>
+      <h2 id="yl-title">¿Empresa o candidato?</h2>
+      <p class="lede">I.STAFF es la empresa de Recursos Humanos. YoLaboro es nuestro portal de empleos.</p>
+    </div>
+    <div class="doors">
+      <a class="door" href="#servicios">
+        <div class="door__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1300&q=70&auto=format&fit=crop" alt="Edificios corporativos vistos desde abajo"></div>
+        <div class="door__body"><span class="door__who">Para empresas</span><h3>Soluciones de Recursos Humanos</h3><p>Reclutamiento, evaluación, verificación, outsourcing y manuales con el respaldo de I.STAFF.</p><span class="tlink">Ver servicios <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M1 7h12M8 2l5 5-5 5"/></svg></span></div>
+      </a>
+      <a class="door door--cand" href="https://www.yolaboro.net/" target="_blank" rel="noopener">
+        <div class="door__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=900&q=70&auto=format&fit=crop" alt="Profesional sonriendo en un entorno de oficina"></div>
+        <div class="door__body"><span class="door__who">Para candidatos</span><h3>Vacantes en YoLaboro</h3><p>Explore las oportunidades disponibles, registre su perfil y postúlese en línea.</p><span class="tlink">Ir a yolaboro.net <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 11L11 3M5 3h6v6"/></svg></span><span class="sr-only">(se abre en una pestaña nueva)</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONFIANZA ============ -->
+<section class="sec" id="confianza" aria-labelledby="trust-title">
+  <div class="frame trust">
+    <div class="trust__text" data-rise>
+      <h2 id="trust-title">Por qué I.STAFF</h2>
+      <p class="lede">Contratar es de las decisiones que más pesan en una empresa. La tratamos así.</p>
+      <ul class="pillars">
+        <li><strong>Confidencialidad</strong><span>Manejo responsable de la información de su empresa y de cada candidato.</span></li>
+        <li><strong>Tecnología propia</strong><span>Expediente digital, video entrevista y seguimiento en línea en YoLaboro.</span></li>
+        <li><strong>Criterio humano</strong><span>Un equipo con trayectoria en recursos humanos acompaña cada proceso.</span></li>
+      </ul>
+    </div>
+    <div class="wall">
+      <figure class="w1 lit"><img loading="lazy" src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=900&q=65&auto=format&fit=crop" alt="Presentación en una reunión corporativa"></figure>
+      <figure class="w2 lit"><img loading="lazy" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=900&q=65&auto=format&fit=crop" alt="Ejecutivo en traje en una oficina"></figure>
+      <figure class="w3 lit"><img loading="lazy" src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=700&q=65&auto=format&fit=crop" alt="Dos profesionales revisando trabajo en una computadora"></figure>
+      <!-- Cifras publicadas en yolaboro.net, consultado el 24 de noviembre de 2026. VALIDAR con I.STAFF. -->
+      <div class="figs" data-rise>
+        <div><strong>+300</strong><span>empresas atendidas</span></div>
+        <div><strong>+1,000</strong><span>contrataciones</span></div>
+        <small>Fuente: yolaboro.net, noviembre de 2026.</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTO ============ -->
+<section class="sec" id="contacto" aria-labelledby="contact-title">
+  <div class="frame contact">
+    <div class="contact__text" data-rise>
+      <h2 id="contact-title">Hablemos de su equipo</h2>
+      <p class="lede">Cuéntenos qué necesita y un asesor de I.STAFF le responderá.</p>
+      <dl class="facts">
+        <div><dt>Correo</dt><dd><a href="mailto:info@istaff.com.gt">info@istaff.com.gt</a></dd></div>
+        <div><dt>Teléfono</dt><dd><a href="tel:+50223133600">+502 2313-3600</a></dd></div>
+        <div class="wide"><dt>Oficina</dt><dd><a href="https://www.google.com/maps/search/?api=1&query=Edificio+Narama+15+avenida+16-14+zona+13+Guatemala" target="_blank" rel="noopener">15 avenida 16-14, zona 13, Edificio Narama, 4to nivel, oficina 415, Ciudad de Guatemala</a></dd></div>
+      </dl>
+      <div class="social">
+        <a href="https://gt.linkedin.com/company/i-staff-s-a-" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.tiktok.com/@istaffguatemala" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.facebook.com/YoLaboro.net/" target="_blank" rel="noopener">Facebook de YoLaboro</a>
+        <a href="https://www.instagram.com/yolaboro" target="_blank" rel="noopener">Instagram de YoLaboro</a>
+      </div>
+      <figure class="contact__img lit"><img loading="lazy" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1000&q=65&auto=format&fit=crop" alt="Apretón de manos al cerrar un acuerdo"></figure>
+    </div>
+    <form class="form" id="contactForm" novalidate>
+      <h3>Solicitar asesoría</h3>
+      <div class="fgrid">
+        <div class="f"><label for="f-name">Nombre y apellido</label><input id="f-name" name="nombre" autocomplete="name" required maxlength="90"><span class="f__err" id="f-name-err" aria-live="polite"></span></div>
+        <div class="f"><label for="f-company">Empresa</label><input id="f-company" name="empresa" autocomplete="organization" required maxlength="120"><span class="f__err" id="f-company-err" aria-live="polite"></span></div>
+        <div class="f"><label for="f-email">Correo electrónico</label><input id="f-email" name="email" type="email" autocomplete="email" required maxlength="120"><span class="f__err" id="f-email-err" aria-live="polite"></span></div>
+        <div class="f"><label for="f-phone">Teléfono</label><input id="f-phone" name="telefono" type="tel" autocomplete="tel" inputmode="tel" required maxlength="20"><span class="f__err" id="f-phone-err" aria-live="polite"></span></div>
+        <div class="f f--wide"><label for="f-service">Servicio de interés</label>
+          <select id="f-service" name="servicio" required>
+            <option value="">Seleccione un servicio</option>
+            <option>Reclutamiento y selección de personal</option>
+            <option>Head Hunting</option>
+            <option>Outsourcing</option>
+            <option>Pruebas de evaluación</option>
+            <option>Estudios socioeconómicos</option>
+            <option>Elaboración de manuales y políticas</option>
+            <option>Perfiles de puestos</option>
+            <option>Clima organizacional</option>
+            <option>Resolución de conflictos</option>
+            <option>Asesoría corporativa</option>
+            <option>Otro</option>
+          </select><span class="f__err" id="f-service-err" aria-live="polite"></span></div>
+        <div class="f f--wide"><label for="f-msg">Mensaje</label><textarea id="f-msg" name="mensaje" required maxlength="2000"></textarea><span class="f__err" id="f-msg-err" aria-live="polite"></span></div>
+        <div class="hp" aria-hidden="true"><label for="f-hp">No llenar</label><input id="f-hp" name="_honey" tabindex="-1" autocomplete="off"></div>
+      </div>
+      <div class="form__foot">
+        <p>Todos los campos son obligatorios. Usamos sus datos solo para responder a su solicitud.</p>
+        <button type="submit" class="btn" id="f-submit"><span class="lbl">Enviar solicitud</span></button>
+      </div>
+      <div class="status" id="f-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="frame">
+    <p class="footer__name" aria-hidden="true">I.STAFF</p>
+    <div class="footer__cols">
+      <div><p>Recursos Humanos para empresas en Guatemala. Reclutamiento, evaluación, verificación, outsourcing y manuales.</p></div>
+      <div><h2>Empresa</h2><ul><li><a href="#nosotros">Nosotros</a></li><li><a href="#proceso">Nuestro proceso</a></li><li><a href="#confianza">Por qué I.STAFF</a></li><li><a href="#contacto">Contacto</a></li></ul></div>
+      <div><h2>Servicios</h2><ul><li><a href="#servicios">Reclutamiento y selección</a></li><li><a href="#servicios">Outsourcing</a></li><li><a href="#servicios">Pruebas de evaluación</a></li><li><a href="#servicios">Estudios socioeconómicos</a></li><li><a href="#servicios">Manuales y políticas</a></li></ul></div>
+      <div><h2>Candidatos</h2><ul><li><a href="https://www.yolaboro.net/" target="_blank" rel="noopener">Portal YoLaboro</a></li><li><a href="https://www.yolaboro.net/Register" target="_blank" rel="noopener">Crear perfil</a></li><li><a href="mailto:info@istaff.com.gt">info@istaff.com.gt</a></li><li><a href="tel:+50223133600">+502 2313-3600</a></li></ul></div>
+    </div>
+    <div class="footer__bot"><span>© <span id="year">2026</span> I.STAFF. Fotografías: <a href="https://unsplash.com/license" target="_blank" rel="noopener">Unsplash</a>.</span><span>Diseño y desarrollo: WEBYA</span></div>
+  </div>
+</footer>
+
+<script>
+/* Destino del formulario: FormSubmit envía cada solicitud a info@istaff.com.gt.
+   El primer envío desde el dominio publicado manda un correo de activación que se confirma una vez.
+   Para otro proveedor, cambie FORM_ENDPOINT. */
+const FORM_ENDPOINT = 'https://formsubmit.co/ajax/info@istaff.com.gt';
+
+(() => {
+  const $ = (s, c = document) => c.querySelector(s);
+  const $$ = (s, c = document) => [...c.querySelectorAll(s)];
+  const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  $('#year').textContent = new Date().getFullYear();
+
+  /* Hero entrance, with a time-based safety */
+  const ready = () => document.body.classList.add('is-ready');
+  requestAnimationFrame(() => requestAnimationFrame(ready));
+  setTimeout(ready, 1200);
+
+  /* Hero: slow crossfade between photographs */
+  const figs = $$('#stage figure');
+  let cur = 0;
+  const load = f => { const i = f.querySelector('img[data-src]'); if (i) { i.src = i.dataset.src; i.removeAttribute('data-src'); } };
+  addEventListener('load', () => figs.forEach(load));
+  if (!reduced) setInterval(() => { if (document.hidden) return; const n = (cur + 1) % figs.length; load(figs[n]); figs[cur].classList.remove('is-on'); figs[n].classList.add('is-on'); cur = n; }, 7000);
+
+  /* Signature: the light comes on as each exhibit reaches the visitor; the parts of each block rise in order */
+  const io = new IntersectionObserver(es => es.forEach(e => {
+    if (!e.isIntersecting) return;
+    e.target.classList.add(e.target.hasAttribute('data-rise') ? 'is-in' : 'is-lit');
+    io.unobserve(e.target);
+  }), {rootMargin: '0px 0px -10% 0px', threshold: .12});
+  $$('.lit,[data-rise]').forEach(el => io.observe(el));
+
+  /* Process: the light moves down the list with the reader */
+  const stepIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) e.target.classList.add('is-lit'); }), {rootMargin: '0px 0px -35% 0px'});
+  $$('#steps li').forEach(s => stepIO.observe(s));
+
+  /* Nav */
+  const nav = $('#nav'); let lastY = scrollY;
+  const onScroll = () => {
+    const y = scrollY;
+    nav.classList.toggle('is-solid', y > 30);
+    nav.classList.toggle('is-hidden', y > lastY && y > 700 && !document.body.classList.contains('menu-open'));
+    lastY = y;
+  };
+  addEventListener('scroll', onScroll, {passive: true}); onScroll();
+  const links = $$('.nav ul a');
+  const secIO = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) links.forEach(l => l.classList.toggle('is-active', l.getAttribute('href') === '#' + e.target.id)); }), {rootMargin: '-45% 0px -50% 0px'});
+  links.forEach(l => { const s = $(l.getAttribute('href')); s && secIO.observe(s); });
+
+  /* Mobile menu */
+  const burger = $('#burger'), mmenu = $('#mmenu');
+  const setMenu = open => {
+    document.body.classList.toggle('menu-open', open);
+    burger.setAttribute('aria-expanded', open); burger.textContent = open ? 'Cerrar' : 'Menú';
+    mmenu.setAttribute('aria-hidden', !open);
+    document.documentElement.style.overflow = open ? 'hidden' : '';
+  };
+  burger.addEventListener('click', () => setMenu(!document.body.classList.contains('menu-open')));
+  $$('a', mmenu).forEach(a => a.addEventListener('click', () => setMenu(false)));
+  addEventListener('keydown', e => { if (e.key === 'Escape' && document.body.classList.contains('menu-open')) { setMenu(false); burger.focus(); } });
+
+  /* Service buttons → form with the service preselected */
+  const sel = $('#f-service'), msg = $('#f-msg');
+  const toForm = (service, text) => {
+    const opt = [...sel.options].find(o => o.text === service);
+    sel.value = opt ? opt.text : 'Otro';
+    if (text) msg.value = text;
+    $('#contacto').scrollIntoView({behavior: reduced ? 'auto' : 'smooth'});
+    setTimeout(() => $('#f-name').focus({preventScroll: true}), reduced ? 0 : 900);
+  };
+  $$('[data-service]').forEach(b => b.addEventListener('click', () => toForm(b.dataset.service)));
+
+  /* The live thing: assemble the candidate file */
+  const picks = $$('#picks input'), rows = $$('#sheetList li'), count = $('#count');
+  const label = v => $(`#picks input[value="${v}"]`).nextElementSibling.textContent;
+  const render = animate => {
+    const on = new Set(picks.filter(p => p.checked).map(p => p.value));
+    let n = 0;
+    rows.forEach(r => {
+      const k = r.dataset.k, show = k === 'base' || k === 'track' || on.has(k), was = !r.hidden;
+      r.hidden = !show;
+      if (show) { n++; if (animate && !was) { r.classList.remove('is-new'); void r.offsetWidth; r.classList.add('is-new'); } }
+    });
+    count.textContent = n + (n === 1 ? ' pieza' : ' piezas');
+  };
+  picks.forEach(p => p.addEventListener('change', () => render(true)));
+  render(false);
+  $('#sheetCta').addEventListener('click', e => {
+    e.preventDefault();
+    const chosen = picks.filter(p => p.checked).map(p => label(p.value));
+    const evals = ['psico', 'tecnicas', 'integridad', 'poligrafo', 'vsa'].some(v => $(`#picks input[value="${v}"]`).checked);
+    const onlySocio = $('#picks input[value="socio"]').checked && !evals && !$('#picks input[value="video"]').checked && !$('#picks input[value="match"]').checked;
+    toForm(onlySocio ? 'Estudios socioeconómicos' : 'Reclutamiento y selección de personal',
+      'Me interesa una búsqueda con: ' + (chosen.length ? chosen.join(', ') : 'perfil y seguimiento') + '.\nPuesto: \nNúmero de plazas: ');
+  });
+
+  /* Form */
+  const form = $('#contactForm'), status = $('#f-status'), submit = $('#f-submit');
+  const rules = {
+    nombre: v => v.trim().length >= 3 || 'Escriba su nombre y apellido.',
+    empresa: v => v.trim().length >= 2 || 'Escriba el nombre de su empresa.',
+    email: v => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.trim()) || 'Escriba un correo electrónico válido.',
+    telefono: v => /^[+()\d\s-]{8,20}$/.test(v.trim()) || 'Escriba un teléfono válido, de al menos 8 dígitos.',
+    servicio: v => !!v || 'Elija el servicio que le interesa.',
+    mensaje: v => v.trim().length >= 10 || 'Escriba un mensaje de al menos 10 caracteres.'
+  };
+  const check = el => {
+    const r = rules[el.name]; if (!r) return true;
+    const res = r(el.value), ok = res === true, f = el.closest('.f'), err = f.querySelector('.f__err');
+    f.classList.toggle('has-error', !ok); el.setAttribute('aria-invalid', !ok);
+    err.textContent = ok ? '' : res;
+    ok ? el.removeAttribute('aria-describedby') : el.setAttribute('aria-describedby', err.id);
+    return ok;
+  };
+  $$('input,select,textarea', form).forEach(el => {
+    el.addEventListener('blur', () => el.value && check(el));
+    el.addEventListener('input', () => el.closest('.f')?.classList.contains('has-error') && check(el));
+  });
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    status.className = 'status'; status.textContent = '';
+    const bad = $$('[name]', form).filter(el => rules[el.name] && !check(el));
+    if (bad.length) { bad[0].focus(); return; }
+    if (form._honey.value) return;
+    const data = Object.fromEntries(new FormData(form)); delete data._honey;
+    const lbl = $('.lbl', submit); submit.disabled = true; lbl.textContent = 'Enviando…';
+    try {
+      const res = await fetch(FORM_ENDPOINT, {method: 'POST', headers: {'Content-Type': 'application/json', Accept: 'application/json'}, body: JSON.stringify({...data, _subject: `Solicitud web: ${data.servicio} — ${data.empresa}`, _template: 'table', _captcha: 'false', _replyto: data.email})});
+      const out = await res.json().catch(() => ({}));
+      if (!res.ok || out.success === false || out.success === 'false') throw new Error();
+      form.reset();
+      status.className = 'status is-ok'; status.textContent = 'Gracias. Recibimos su solicitud y un asesor de I.STAFF se comunicará con usted.';
+    } catch {
+      const body = encodeURIComponent(`Nombre: ${data.nombre}\nEmpresa: ${data.empresa}\nCorreo: ${data.email}\nTeléfono: ${data.telefono}\nServicio: ${data.servicio}\n\n${data.mensaje}`);
+      status.className = 'status is-err';
+      status.innerHTML = `No pudimos enviar su solicitud. <a href="mailto:info@istaff.com.gt?subject=${encodeURIComponent('Solicitud de asesoría: ' + data.servicio)}&body=${body}">Envíela por correo</a> o llame al <a href="tel:+50223133600">+502 2313-3600</a>.`;
+    } finally { submit.disabled = false; lbl.textContent = 'Enviar solicitud'; }
+  });
+})();
+</script>
+</body>
+</html>
